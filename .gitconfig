@@ -1,0 +1,9 @@
+[user]
+	name = Ian Mahuron
+	email = ian@mahuron.org
+[core]
+	editor = emacsclient
+[color]
+	status = auto
+	branch = auto
+	ui = auto

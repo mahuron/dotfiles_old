@@ -1,0 +1,5 @@
+keycode 67 = Escape
+keycode 9 = F1
+
+remove Lock = Caps_Lock
+add Control = Caps_Lock
