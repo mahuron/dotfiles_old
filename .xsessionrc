@@ -3,17 +3,15 @@
 ################################################################################
 # Input
 
-# Make caps CapsLock an additional Control
-# setxkbmap -option "ctrl:nocaps"
-
 # T60: In order to get the various ThinkPad buttons working, you may have to
 # modify /sys/devices/platform/thinkpad_acpi/hotkey_mask
 # sysfsutils (/etc/sysfs.conf) can facilitate the modification on boot
 
-# T60 -- Make the TrackPoint scroll button work
+# T60: Make the TrackPoint scroll button work
 xinput --set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation" 1
 xinput --set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Button" 2
 xinput --set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Timeout" 200
 xinput --set-prop "TPPS/2 IBM TrackPoint" "Evdev Wheel Emulation Axes" 6 7 4 5
 
+# Use xmodmap to remap keys
 [ -f $HOME/.xmodmaprc ] && xmodmap $HOME/.xmodmaprc
