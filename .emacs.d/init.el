@@ -12,6 +12,11 @@
 (scroll-bar-mode -1)
 (menu-bar-mode -1)
 
+;; keyboard
+;; mac modifiers need fixing
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'super)
+
 ;; selection options
 (setq transient-mark-mode nil)
 (setq mouse-yank-at-point t)
@@ -38,6 +43,9 @@
 ;; shorten literal lambda to greek character
 (require 'pretty-lambdada)
 (pretty-lambda-for-modes)
+
+;; magit
+(require 'magit)
 
 ;; python
 (add-hook 'python-mode-hook 'turn-on-pretty-lambda-mode)
