@@ -1,5 +1,7 @@
+! T60: Swap Escape and F1
 keycode 67 = Escape
 keycode 9 = F1
 
+! Add Caps_Lock as a second Control
 remove Lock = Caps_Lock
 add Control = Caps_Lock
