@@ -49,3 +49,9 @@
 
 ;; python
 (add-hook 'python-mode-hook 'turn-on-pretty-lambda-mode)
+
+;; c
+(setq 
+ c-default-style "k&r"
+ c-basic-offset 4)
+(add-hook 'c-mode-common-hook '(lambda () (c-toggle-auto-state 1)))
