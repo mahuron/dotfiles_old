@@ -1,11 +1,11 @@
 Emacs.FontBackend: xft
-Emacs.font: Terminus-8
+Emacs.font: Inconsolata-12
 
 Rxvt.title: terminal
 Rxvt.termName: xterm
 Rxvt.geometry: 80x43
 Rxvt.scrollBar: False
-URxvt.font: xft:Terminus-8:antialias=false
+URxvt.font: xft:Terminus-10:antialias=false
 Rxvt.foreground: White
 Rxvt.background: Black
 Rxvt.color4: RoyalBlue3
@@ -13,3 +13,4 @@ Rxvt.color12: RoyalBlue1
 
 URxvt.perl-ext: matcher
 URxvt.urlLauncher: chromium-browser
+URxvt.urgentOnBell: True
