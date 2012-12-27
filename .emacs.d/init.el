@@ -27,6 +27,12 @@
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
+;; terminal
+(require 'multi-term)
+(setq multi-term-program "/bin/zsh")
+(setq multi-term-dedicated-select-after-open-p t)
+(global-set-key (kbd "C-c C-t") 'multi-term-dedicated-toggle)
+
 ;; built in version control
 (setq
  backup-by-copying t
@@ -39,7 +45,7 @@
 ;; themes
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-arjen)
+(color-theme-solarized-dark)
 
 ;; shorten literal lambda to greek character
 (require 'pretty-lambdada)
