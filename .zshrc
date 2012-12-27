@@ -2,10 +2,13 @@
 
 export PAGER="less"
 export LESS="-R"
+export EDITOR="emacsclient -n"
+export PATH=$HOME/.cabal/bin:/usr/local/bin:$PATH
+ 
+setopt extended_glob
+setopt autocd
 
 alias ls='ls --color -F'
-
-setopt extended_glob
 
 # LS_COLORS
 eval $(dircolors -b ~/.dircolors)
