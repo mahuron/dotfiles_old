@@ -348,7 +348,7 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (show-paren-mismatch ((t (,@fmt-bold ,@fg-red ,@bg-base01))))
              ;; widgets
              (widget-field
-              ((t (,@fg-base1 ,@bg-base02 :box (:line-width 1 :color ,base2)
+              ((t (,@fg-base1 ,@bg-base02 :box (:line-width 1)
                               :inherit default))))
              (widget-single-line-field ((t (:inherit widget-field))))
              ;; extra modules
@@ -502,6 +502,13 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (rcirc-bright-nick ((t (:foreground ,magenta))))
              (rcirc-server ((t (:foreground ,base1))))
              (rcirc-timestamp ((t (:foreground ,base01))))
+             ;; ERC
+             (erc-input-face ((t (:foreground ,base01))))
+             (erc-keyword-face ((t (,@fmt-bldi ,@fg-yellow))))
+             (erc-my-nick-face ((t (:foreground ,blue))))
+             (erc-nick-default-face ((t (,@fmt-none ,@fg-cyan))))
+             (erc-notice-face ((t (,@fmt-none ,@fg-blue))))
+             (erc-timestamp-face ((t (:foreground ,base01))))
              ;;font-latex
              (font-latex-warning-face ((t (,@fg-red))))
              (font-latex-sectioning-5-face ((t (,@fg-violet))))

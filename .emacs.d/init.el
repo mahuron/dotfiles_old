@@ -9,9 +9,10 @@
 
 ;; general ui options
 (setq inhibit-splash-screen t)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(menu-bar-mode -1)
+(when (display-graphic-p)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
+  (menu-bar-mode -1))
 
 ;; keyboard
 ;; mac modifiers need fixing
@@ -45,7 +46,8 @@
 ;; themes
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-solarized-dark)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp/color-theme/themes/solarized")
+(load-theme 'solarized-dark t)
 
 ;; shorten literal lambda to greek character
 (require 'pretty-lambdada)
